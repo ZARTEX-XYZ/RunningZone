@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RunningZone Premium - Trouvez vos chaussures de running parfaites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="description" content="RunningZone Premium - Recommandations personnalisées de chaussures de running avec IA avancée">
+</head>
+<body>
+    <!-- Navigation Premium avec Glassmorphism -->
+    <nav class="navbar-premium">
+        <div class="container">
+            <div class="navbar__content">
+                <div class="navbar__brand">
+                    <div class="brand-logo">
+                        <span class="brand-icon">🏃‍♂️</span>
+                        <h2>RunningZone <span class="premium-badge">Premium</span></h2>
+                    </div>
+                </div>
+                <div class="navbar__menu">
+                    <a href="#" class="nav-link-premium active" data-page="home">
+                        <span class="nav-icon">🏠</span>
+                        <span>Accueil</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="budget">
+                        <span class="nav-icon">💰</span>
+                        <span>Budget</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="types">
+                        <span class="nav-icon">🎯</span>
+                        <span>Types</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="recommendations">
+                        <span class="nav-icon">⭐</span>
+                        <span>Recommandations</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="compare">
+                        <span class="nav-icon">⚖️</span>
+                        <span>Comparateur</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="favorites">
+                        <span class="nav-icon">❤️</span>
+                        <span>Favoris</span>
+                        <span class="favorites-count" id="favorites-count">0</span>
+                    </a>
+                    <a href="#" class="nav-link-premium" data-page="contact">
+                        <span class="nav-icon">📞</span>
+                        <span>Contact</span>
+                        <span class="messages-count" id="messages-count">0</span>
+                    </a>
+                    <a href="#" class="nav-link-premium admin-link" data-page="admin">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Admin</span>
+                    </a>
+                </div>
+                
+                <!-- Theme Toggle -->
+                <div class="theme-controls">
+                    <button class="theme-toggle" id="theme-toggle" title="Changer le thème">
+                        <span class="theme-icon">🌓</span>
+                    </button>
+                </div>
+                
+                <button class="navbar__toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Premium -->
+    <div class="breadcrumb-premium">
+        <div class="container">
+            <nav class="breadcrumb" id="breadcrumb">
+                <!-- Généré dynamiquement -->
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page d'accueil Premium -->
+    <section id="home" class="page active">
+        <!-- Hero Section avec Glassmorphism -->
+        <div class="hero-premium">
+            <div class="hero-background">
+                <div class="floating-element floating-1"></div>
+                <div class="floating-element floating-2"></div>
+                <div class="floating-element floating-3"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Découvrez vos
+                            <span class="gradient-text">chaussures parfaites</span>
+                        </h1>
+                        <p class="hero-subtitle">Intelligence artificielle avancée pour des recommandations ultra-personnalisées selon votre profil de coureur</p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">12k+</span>
+                                <span class="stat-label">Coureurs satisfaits</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Précision IA</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4.9/5</span>
+                                <span class="stat-label">Satisfaction</span>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-actions">
+                            <button class="btn-premium btn-primary" data-page="budget">
+                                <span class="btn-icon">🚀</span>
+                                <span>Commencer l'analyse</span>
+                                <span class="btn-arrow">→</span>
+                            </button>
+                            <button class="btn-premium btn-outline" data-page="compare">
+                                <span class="btn-icon">⚖️</span>
+                                <span>Comparateur avancé</span>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-visual">
+                        <div class="shoe-showcase">
+                            <div class="shoe-card-hero">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400" alt="Chaussure Nike">
+                                <div class="shoe-rating-overlay">⭐ 4.8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- Features Premium -->
+            <section class="features-premium">
+                <h2 class="section-title">Pourquoi RunningZone Premium ?</h2>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🧠</div>
+                        <h3>IA Avancée</h3>
+                        <p>Algorithme d'apprentissage qui s'améliore avec chaque recommandation</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Analytics Poussées</h3>
+                        <p>Analyse biomécanique et conseils personnalisés pour optimiser vos performances</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔬</div>
+                        <h3>Tests Laboratoire</h3>
+                        <p>Données techniques validées par nos experts en biomécanique sportive</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🏆</div>
+                        <h3>Suivi Performance</h3>
+                        <p>Dashboard personnel pour suivre vos progrès et optimiser votre équipement</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Progress Indicator Enhanced -->
+            <section class="progress-premium">
+                <h2 class="section-title">Votre parcours personnalisé</h2>
+                <div class="progress-flow">
+                    <div class="flow-step active" data-step="1">
+                        <div class="step-circle">
+                            <span class="step-number">1</span>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="step-info">
+                            <h4>Analyse Budget</h4>
+                            <p>Définition de votre gamme optimale</p>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-step" data-step="2">
+                        <div class="step-circle">
+                            <span class="step-number">2</span>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="step-info">
+                            <h4>Profil Coureur</h4>
+                            <p>Types de course et préférences</p>
+                        </div>
+                    </div>
+                    <div class="flow-connector"></div>
+                    <div class="flow-step" data-step="3">
+                        <div class="step-circle">
+                            <span class="step-number">3</span>
+                            <div class="step-progress"></div>
+                        </div>
+                        <div class="step-info">
+                            <h4>Recommandations IA</h4>
+                            <p>Sélection personnalisée et comparaison</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- Page Budget Premium -->
+    <section id="budget" class="page">
+        <div class="container">
+            <div class="page-header-premium">
+                <h1>Analyse de votre budget optimal</h1>
+                <p>Notre IA détermine la meilleure gamme de prix selon vos besoins et objectifs</p>
+                <div class="status-indicator" id="budget-status">
+                    <span class="status-icon">⚠️</span>
+                    <span class="status-text">Définissez votre budget pour continuer</span>
+                </div>
+            </div>
+
+            <div class="budget-premium-container">
+                <!-- Budget Slider Premium -->
+                <div class="budget-slider-premium">
+                    <h3>Slider de budget intelligent</h3>
+                    <div class="slider-container">
+                        <div class="slider-track"></div>
+                        <input type="range" id="budget-slider" min="50" max="300" step="5" value="150">
+                        <div class="slider-thumb-value">
+                            <span id="budget-value">150€</span>
+                            <div class="value-tooltip">Budget optimal calculé</div>
+                        </div>
+                        <div class="slider-labels">
+                            <span class="label-min">50€</span>
+                            <span class="label-max">300€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="budget-recommendations">
+                        <div class="budget-insight" id="budget-insight">
+                            <div class="insight-icon">💡</div>
+                            <div class="insight-text">
+                                <strong>Conseil IA :</strong> <span id="insight-message">Ajustez le slider pour voir nos recommandations</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budget Categories Premium -->
+                <div class="budget-categories">
+                    <h3>Ou choisissez votre catégorie</h3>
+                    <div class="categories-grid" id="budget-categories">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+
+                <div class="budget-actions">
+                    <button class="btn-premium btn-secondary" data-page="home">
+                        <span class="btn-arrow">←</span>
+                        <span>Retour</span>
+                    </button>
+                    <button class="btn-premium btn-primary" id="continue-to-types" disabled>
+                        <span>Analyser mon profil coureur</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Types Premium -->
+    <section id="types" class="page">
+        <div class="container">
+            <div class="page-header-premium">
+                <h1>Définition de votre profil coureur</h1>
+                <p>Sélectionnez jusqu'à 3 types de course pour une analyse précise de vos besoins</p>
+                <div class="status-indicator" id="types-status">
+                    <span class="status-icon">⚠️</span>
+                    <span class="status-text">Sélectionnez vos types de course préférés</span>
+                </div>
+            </div>
+
+            <div class="types-premium-container">
+                <div class="types-grid-premium" id="types-grid">
+                    <!-- Généré dynamiquement -->
+                </div>
+                
+                <div class="selection-summary" id="selection-summary">
+                    <div class="summary-content">
+                        <div class="selection-count">
+                            <span class="count-number" id="selected-count">0</span>
+                            <span class="count-text">/3 types sélectionnés</span>
+                        </div>
+                        <div class="selection-advice">
+                            <span class="advice-icon">💡</span>
+                            <span>Astuce : Combinez différents types pour des recommandations plus polyvalentes</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="types-actions">
+                    <button class="btn-premium btn-secondary" data-page="budget">
+                        <span class="btn-arrow">←</span>
+                        <span>Budget</span>
+                    </button>
+                    <button class="btn-premium btn-primary" id="generate-recommendations" disabled>
+                        <span class="btn-icon">🧠</span>
+                        <span>Générer mes recommandations IA</span>
+                        <span class="btn-arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Recommandations Premium -->
+    <section id="recommendations" class="page">
+        <div class="container">
+            <div class="page-header-premium">
+                <h1>Vos recommandations personnalisées</h1>
+                <div class="recommendations-summary" id="recommendations-summary">
+                    <!-- Généré dynamiquement -->
+                </div>
+            </div>
+
+            <div class="recommendations-premium">
+                <!-- Toolbar Premium -->
+                <div class="recommendations-toolbar">
+                    <div class="search-premium">
+                        <div class="search-input-container">
+                            <input type="text" id="search-input" placeholder="Recherche intelligente..." class="search-input">
+                            <button class="search-btn">🔍</button>
+                        </div>
+                    </div>
+                    
+                    <div class="filters-premium">
+                        <select id="sort-select" class="premium-select">
+                            <option value="ai-score">Score IA (recommandé)</option>
+                            <option value="rating">Note utilisateurs</option>
+                            <option value="price-asc">Prix croissant</option>
+                            <option value="price-desc">Prix décroissant</option>
+                            <option value="weight">Plus léger d'abord</option>
+                        </select>
+                        
+                        <button class="filter-btn" id="advanced-filters">
+                            <span class="filter-icon">⚙️</span>
+                            <span>Filtres avancés</span>
+                        </button>
+                    </div>
+                    
+                    <div class="results-info" id="results-info">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+
+                <!-- Cards Premium -->
+                <div class="shoes-grid-premium" id="shoes-grid">
+                    <!-- Généré dynamiquement -->
+                </div>
+
+                <div class="recommendations-actions">
+                    <button class="btn-premium btn-secondary" data-page="types">
+                        <span class="btn-arrow">←</span>
+                        <span>Modifier critères</span>
+                    </button>
+                    <button class="btn-premium btn-outline" id="compare-selected">
+                        <span class="btn-icon">⚖️</span>
+                        <span>Comparer sélectionnées</span>
+                    </button>
+                    <button class="btn-premium btn-primary" id="restart-analysis">
+                        <span class="btn-icon">🔄</span>
+                        <span>Nouvelle analyse</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Comparateur Premium -->
+    <section id="compare" class="page">
+        <div class="container">
+            <div class="page-header-premium">
+                <h1>Comparateur avancé de chaussures</h1>
+                <p>Analyse détaillée et comparaison technique de vos chaussures sélectionnées</p>
+            </div>
+
+            <div class="compare-premium">
+                <div class="compare-selector">
+                    <p>Sélectionnez jusqu'à 4 chaussures à comparer :</p>
+                    <div class="compare-shoes-selector" id="compare-selector">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+
+                <div class="compare-table-container" id="compare-container">
+                    <div class="empty-compare">
+                        <div class="empty-icon">⚖️</div>
+                        <h3>Commencez votre comparaison</h3>
+                        <p>Sélectionnez des chaussures ci-dessus pour voir la comparaison détaillée</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Favoris Premium -->
+    <section id="favorites" class="page">
+        <div class="container">
+            <div class="page-header-premium">
+                <h1>Vos chaussures favorites</h1>
+                <p>Gérez votre sélection et recevez des alertes sur les prix</p>
+            </div>
+
+            <div class="favorites-premium">
+                <div class="favorites-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">❤️</div>
+                        <div class="stat-info">
+                            <span class="stat-number" id="favorites-total">0</span>
+                            <span class="stat-label">Favoris</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💰</div>
+                        <div class="stat-info">
+                            <span class="stat-number" id="favorites-avg-price">0€</span>
+                            <span class="stat-label">Prix moyen</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="favorites-grid" id="favorites-grid">
+                    <div class="empty-favorites">
+                        <div class="empty-icon">💔</div>
+                        <h3>Aucun favori pour le moment</h3>
+                        <p>Ajoutez des chaussures à vos favoris depuis les recommandations</p>
+                        <button class="btn-premium btn-primary" data-page="recommendations">
+                            <span>Découvrir des chaussures</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Contact Premium NOUVELLE VERSION -->
+    <section id="contact" class="page">
+        <div class="container">
+            <!-- Header avec icônes et titre accrocheur -->
+            <div class="contact-header-premium">
+                <div class="contact-hero">
+                    <h1><span class="hero-emoji">📞</span> Support & Contact RunningZone</h1>
+                    <p>Assistance personnalisée et réponses expertes pour tous vos besoins running</p>
+                    <div class="contact-stats">
+                        <div class="stat-item">
+                            <span class="stat-icon">⚡</span>
+                            <span class="stat-text">Réponse en 24h</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">🎯</span>
+                            <span class="stat-text">Support expert</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-icon">💬</span>
+                            <span class="stat-text" id="total-messages-stat">0 messages reçus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layout en 2 colonnes -->
+            <div class="contact-main-grid">
+                <!-- FAQ à gauche -->
+                <div class="faq-section-premium">
+                    <div class="section-header">
+                        <h2><span class="section-icon">❓</span> Questions Fréquentes</h2>
+                        <p>Trouvez rapidement les réponses à vos questions</p>
+                    </div>
+                    
+                    <!-- Recherche FAQ -->
+                    <div class="faq-search-container">
+                        <div class="search-input-wrapper">
+                            <input type="text" id="faq-search" placeholder="🔍 Rechercher dans les questions..." class="faq-search-input">
+                            <button class="search-clear-btn" id="clear-faq-search">✕</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Catégories FAQ -->
+                    <div class="faq-categories">
+                        <button class="category-btn active" data-category="all">Toutes</button>
+                        <button class="category-btn" data-category="shoes">Chaussures</button>
+                        <button class="category-btn" data-category="tech">Technique</button>
+                        <button class="category-btn" data-category="maintenance">Entretien</button>
+                        <button class="category-btn" data-category="health">Santé</button>
+                    </div>
+                    
+                    <div class="faq-list-premium" id="faq-list-premium">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+
+                <!-- Contact Form à droite -->
+                <div class="contact-form-section-premium">
+                    <div class="section-header">
+                        <h2><span class="section-icon">✉️</span> Nous Contacter</h2>
+                        <p>Une question spécifique ? Contactez notre équipe d'experts</p>
+                    </div>
+                    
+                    <!-- Informations de contact -->
+                    <div class="contact-info-premium">
+                        <div class="info-card">
+                            <div class="info-icon">📧</div>
+                            <div class="info-details">
+                                <strong>Email</strong>
+                                <span>contact@runningzone.fr</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <div class="info-details">
+                                <strong>Téléphone</strong>
+                                <span>+33 1 42 86 95 27</span>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-details">
+                                <strong>Horaires Support</strong>
+                                <span>Lun-Ven: 9h-18h, Sam: 10h-16h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulaire fonctionnel -->
+                    <form class="contact-form-premium" id="contact-form-premium">
+                        <div class="form-row">
+                            <div class="form-group-modern">
+                                <input type="text" id="contact-name" class="form-input-modern" required>
+                                <label for="contact-name" class="form-label-modern">
+                                    <span class="label-icon">👤</span>
+                                    <span class="label-text">Nom complet</span>
+                                </label>
+                                <div class="form-error" id="name-error"></div>
+                            </div>
+                            
+                            <div class="form-group-modern">
+                                <input type="email" id="contact-email" class="form-input-modern" required>
+                                <label for="contact-email" class="form-label-modern">
+                                    <span class="label-icon">📧</span>
+                                    <span class="label-text">Adresse email</span>
+                                </label>
+                                <div class="form-error" id="email-error"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group-modern">
+                            <select id="contact-subject" class="form-input-modern" required>
+                                <option value="">Sélectionnez un sujet...</option>
+                                <option value="recommendation">🎯 Question recommandations</option>
+                                <option value="technical">🔧 Support technique</option>
+                                <option value="premium">💎 Abonnement Premium</option>
+                                <option value="partnership">🤝 Partenariat marque</option>
+                                <option value="bug">🐛 Signaler un bug</option>
+                                <option value="feedback">💡 Suggestions d'amélioration</option>
+                                <option value="other">📝 Autre</option>
+                            </select>
+                            <label for="contact-subject" class="form-label-modern">
+                                <span class="label-icon">🏷️</span>
+                                <span class="label-text">Sujet de votre message</span>
+                            </label>
+                            <div class="form-error" id="subject-error"></div>
+                        </div>
+                        
+                        <div class="form-group-modern">
+                            <textarea id="contact-message" class="form-input-modern textarea-modern" rows="5" required></textarea>
+                            <label for="contact-message" class="form-label-modern">
+                                <span class="label-icon">💬</span>
+                                <span class="label-text">Votre message détaillé</span>
+                            </label>
+                            <div class="form-error" id="message-error"></div>
+                            <div class="char-counter">
+                                <span id="char-count">0</span>/500 caractères
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-contact-submit" id="contact-submit-btn">
+                            <span class="submit-icon">📨</span>
+                            <span class="submit-text">Envoyer le message</span>
+                            <div class="submit-loader hidden">
+                                <div class="loader-spinner"></div>
+                            </div>
+                        </button>
+                        
+                        <div class="form-success hidden" id="form-success">
+                            <div class="success-icon">✅</div>
+                            <div class="success-message">
+                                <strong>Message envoyé avec succès !</strong>
+                                <p>Notre équipe vous répondra dans les 24h.</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Newsletter section -->
+            <div class="newsletter-section-premium">
+                <div class="newsletter-card">
+                    <div class="newsletter-icon">📬</div>
+                    <div class="newsletter-content">
+                        <h3>Restez informé des nouveautés</h3>
+                        <p>Recevez nos conseils running et les dernières recommandations chaussures</p>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="Votre email..." class="newsletter-input">
+                            <button class="newsletter-btn">S'abonner</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Réseaux sociaux intégrés -->
+            <div class="social-media-section-premium">
+                <div class="section-header">
+                    <h2><span class="section-icon">🌐</span> Suivez-nous</h2>
+                    <p>Rejoignez notre communauté running sur les réseaux sociaux</p>
+                </div>
+                
+                <div class="social-grid-premium" id="social-grid-premium">
+                    <!-- Généré dynamiquement -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page Admin Premium avec Sidebar -->
+    <section id="admin" class="page">
+        <!-- Login Screen Premium -->
+        <div id="admin-login" class="admin-login-premium">
+            <div class="login-container">
+                <div class="login-card-premium">
+                    <div class="login-header">
+                        <div class="login-icon">⚙️</div>
+                        <h2>Administration Premium</h2>
+                        <p>Accès au tableau de bord avancé</p>
+                    </div>
+                    
+                    <form id="login-form" class="login-form-premium">
+                        <div class="form-group-premium">
+                            <input type="text" id="admin-username" class="input-premium" placeholder=" " required>
+                            <label for="admin-username" class="label-premium">Identifiant</label>
+                        </div>
+                        
+                        <div class="form-group-premium">
+                            <input type="password" id="admin-password" class="input-premium" placeholder=" " required>
+                            <label for="admin-password" class="label-premium">Mot de passe</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-premium btn-primary btn-full">
+                            <span class="btn-icon">🔓</span>
+                            <span>Se connecter</span>
+                        </button>
+                    </form>
+                    
+                    <div id="login-error" class="login-error hidden"></div>
+                    
+                    <div class="login-demo">
+                        <small>👤 Demo: <code>admin</code> / <code>admin123</code></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin Dashboard Premium -->
+        <div id="admin-panel" class="admin-panel-premium hidden">
+            <!-- Sidebar Navigation -->
+            <div class="admin-sidebar" id="admin-sidebar">
+                <div class="sidebar-header">
+                    <div class="sidebar-brand">
+                        <span class="brand-icon">⚙️</span>
+                        <span class="brand-text">Admin Premium</span>
+                    </div>
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <span class="toggle-icon">⟨</span>
+                    </button>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <a href="#" class="sidebar-link active" data-admin-tab="dashboard">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                    <a href="#" class="sidebar-link" data-admin-tab="shoes">
+                        <span class="nav-icon">👟</span>
+                        <span class="nav-text">Chaussures</span>
+                        <span class="nav-badge" id="shoes-count">12</span>
+                    </a>
+                    <a href="#" class="sidebar-link" data-admin-tab="messages">
+                        <span class="nav-icon">💬</span>
+                        <span class="nav-text">Messages</span>
+                        <span class="nav-badge" id="admin-messages-count">0</span>
+                    </a>
+                    <a href="#" class="sidebar-link" data-admin-tab="analytics">
+                        <span class="nav-icon">📈</span>
+                        <span class="nav-text">Analytics</span>
+                    </a>
+                    <a href="#" class="sidebar-link" data-admin-tab="users">
+                        <span class="nav-icon">👥</span>
+                        <span class="nav-text">Utilisateurs</span>
+                    </a>
+                    <a href="#" class="sidebar-link" data-admin-tab="settings">
+                        <span class="nav-icon">⚙️</span>
+                        <span class="nav-text">Paramètres</span>
+                    </a>
+                </nav>
+                
+                <div class="sidebar-footer">
+                    <button class="btn-premium btn-outline btn-sm" id="logout-btn">
+                        <span class="btn-icon">🚪</span>
+                        <span>Déconnexion</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="admin-main" id="admin-main">
+                <!-- Header with User Info -->
+                <div class="admin-header">
+                    <h1 id="admin-page-title">Tableau de bord</h1>
+                    <div class="admin-user">
+                        <div class="user-avatar">👤</div>
+                        <div class="user-info">
+                            <span class="user-name">Admin</span>
+                            <span class="user-role">Administrateur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Content -->
+                <div id="admin-dashboard" class="admin-content active">
+                    <!-- KPI Cards -->
+                    <div class="kpi-grid">
+                        <div class="kpi-card">
+                            <div class="kpi-icon">👟</div>
+                            <div class="kpi-content">
+                                <span class="kpi-label">Chaussures</span>
+                                <span class="kpi-value" id="total-shoes">12</span>
+                                <span class="kpi-trend up">+2 cette semaine</span>
+                            </div>
+                        </div>
+                        
+                        <div class="kpi-card">
+                            <div class="kpi-icon">💰</div>
+                            <div class="kpi-content">
+                                <span class="kpi-label">Prix Moyen</span>
+                                <span class="kpi-value" id="avg-price">166€</span>
+                                <span class="kpi-trend">Stable</span>
+                            </div>
+                        </div>
+                        
+                        <div class="kpi-card">
+                            <div class="kpi-icon">⭐</div>
+                            <div class="kpi-content">
+                                <span class="kpi-label">Note Moyenne</span>
+                                <span class="kpi-value" id="avg-rating">4.7/5</span>
+                                <span class="kpi-trend up">+0.2 ce mois</span>
+                            </div>
+                        </div>
+                        
+                        <div class="kpi-card">
+                            <div class="kpi-icon">💬</div>
+                            <div class="kpi-content">
+                                <span class="kpi-label">Messages</span>
+                                <span class="kpi-value" id="total-messages-kpi">0</span>
+                                <span class="kpi-trend" id="messages-trend">Nouveau système</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts Row -->
+                    <div class="charts-grid">
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h3>Répartition par marques</h3>
+                                <button class="chart-action">📊</button>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="brandChart"></canvas>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-card">
+                            <div class="chart-header">
+                                <h3>Évolution des prix</h3>
+                                <button class="chart-action">📈</button>
+                            </div>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="priceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shoes Management -->
+                <div id="admin-shoes" class="admin-content">
+                    <div class="content-header">
+                        <h2>Gestion des chaussures</h2>
+                        <div class="header-actions">
+                            <button class="btn-premium btn-primary" id="add-shoe-btn">
+                                <span class="btn-icon">➕</span>
+                                <span>Ajouter chaussure</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-controls">
+                        <div class="search-control">
+                            <input type="text" id="table-search" class="input-premium" placeholder="Rechercher...">
+                        </div>
+                        <div class="filter-control">
+                            <select id="brand-filter" class="input-premium">
+                                <option value="">Toutes marques</option>
+                            </select>
+                        </div>
+                        <div class="export-control">
+                            <button class="btn-premium btn-outline" id="export-csv">
+                                <span class="btn-icon">📥</span>
+                                <span>Exporter CSV</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-premium-container">
+                        <table class="table-premium" id="shoes-table">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nom</th>
+                                    <th>Marque</th>
+                                    <th>Prix</th>
+                                    <th>Note</th>
+                                    <th>Stock</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="shoes-table-body">
+                                <!-- Généré dynamiquement -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Messages Management -->
+                <div id="admin-messages" class="admin-content">
+                    <div class="content-header">
+                        <h2>Gestion des messages</h2>
+                        <div class="header-actions">
+                            <button class="btn-premium btn-outline" id="export-messages-csv">
+                                <span class="btn-icon">📥</span>
+                                <span>Exporter CSV</span>
+                            </button>
+                            <button class="btn-premium btn-secondary" id="mark-all-read">
+                                <span class="btn-icon">✅</span>
+                                <span>Tout marquer lu</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="messages-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">💬</div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="total-messages-count">0</span>
+                                <span class="stat-label">Total messages</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🆕</div>
+                            <div class="stat-info">
+                                <span class="stat-number" id="new-messages-count">0</span>
+                                <span class="stat-label">Nouveaux</span>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-info">
+                                <span class="stat-number">< 24h</span>
+                                <span class="stat-label">Temps de réponse</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="messages-list" id="admin-messages-list">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+
+                <!-- Analytics -->
+                <div id="admin-analytics" class="admin-content">
+                    <div class="content-header">
+                        <h2>Analytics avancées</h2>
+                        <div class="period-selector">
+                            <button class="period-btn active">7j</button>
+                            <button class="period-btn">30j</button>
+                            <button class="period-btn">3m</button>
+                        </div>
+                    </div>
+                    
+                    <div class="analytics-grid">
+                        <div class="analytics-card">
+                            <h3>Top Chaussures</h3>
+                            <div class="top-shoes-list" id="top-shoes">
+                                <!-- Généré dynamiquement -->
+                            </div>
+                        </div>
+                        
+                        <div class="analytics-card">
+                            <h3>Types de course populaires</h3>
+                            <div class="types-stats" id="types-stats">
+                                <!-- Généré dynamiquement -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Users Management -->
+                <div id="admin-users" class="admin-content">
+                    <div class="content-header">
+                        <h2>Gestion utilisateurs</h2>
+                    </div>
+                    <div class="users-placeholder">
+                        <div class="placeholder-icon">👥</div>
+                        <h3>Module utilisateurs</h3>
+                        <p>Fonctionnalité à venir dans la prochaine mise à jour</p>
+                    </div>
+                </div>
+
+                <!-- Settings -->
+                <div id="admin-settings" class="admin-content">
+                    <div class="content-header">
+                        <h2>Paramètres système</h2>
+                    </div>
+                    
+                    <div class="settings-grid">
+                        <div class="settings-card">
+                            <h3>Configuration générale</h3>
+                            <div class="setting-item">
+                                <label>Mode maintenance</label>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                            <div class="setting-item">
+                                <label>Notifications email</label>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider"></span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="settings-card">
+                            <h3>Sauvegarde</h3>
+                            <button class="btn-premium btn-primary">
+                                <span class="btn-icon">💾</span>
+                                <span>Sauvegarder données</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Premium pour Chaussures -->
+    <div id="shoe-modal" class="modal-premium hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content-premium">
+            <div class="modal-header-premium">
+                <h3 id="modal-title">Ajouter une chaussure</h3>
+                <button class="modal-close" id="modal-close">✕</button>
+            </div>
+            
+            <form id="shoe-form" class="modal-body-premium">
+                <div class="form-grid">
+                    <div class="form-group-premium">
+                        <input type="text" id="shoe-name" class="input-premium" placeholder=" " required>
+                        <label for="shoe-name" class="label-premium">Nom de la chaussure *</label>
+                    </div>
+                    
+                    <div class="form-group-premium">
+                        <input type="text" id="shoe-brand" class="input-premium" placeholder=" " required>
+                        <label for="shoe-brand" class="label-premium">Marque *</label>
+                    </div>
+                    
+                    <div class="form-group-premium">
+                        <input type="number" id="shoe-price" class="input-premium" placeholder=" " required>
+                        <label for="shoe-price" class="label-premium">Prix (€) *</label>
+                    </div>
+                    
+                    <div class="form-group-premium">
+                        <input type="number" id="shoe-rating" class="input-premium" min="1" max="5" step="0.1" placeholder=" " required>
+                        <label for="shoe-rating" class="label-premium">Note (1-5) *</label>
+                    </div>
+                    
+                    <div class="form-group-premium">
+                        <input type="text" id="shoe-weight" class="input-premium" placeholder=" " required>
+                        <label for="shoe-weight" class="label-premium">Poids (ex: 280g) *</label>
+                    </div>
+                    
+                    <div class="form-group-premium">
+                        <input type="text" id="shoe-drop" class="input-premium" placeholder=" " required>
+                        <label for="shoe-drop" class="label-premium">Drop (ex: 10mm) *</label>
+                    </div>
+                </div>
+                
+                <div class="form-group-premium full-width">
+                    <input type="url" id="shoe-image" class="input-premium" placeholder=" " required>
+                    <label for="shoe-image" class="label-premium">URL de l'image *</label>
+                </div>
+                
+                <div class="form-group-premium full-width">
+                    <textarea id="shoe-description" class="input-premium textarea-premium" placeholder=" " rows="3" required></textarea>
+                    <label for="shoe-description" class="label-premium">Description *</label>
+                </div>
+                
+                <div class="form-group-premium full-width">
+                    <input type="text" id="shoe-technology" class="input-premium" placeholder=" " required>
+                    <label for="shoe-technology" class="label-premium">Technologie *</label>
+                </div>
+                
+                <div class="types-selection">
+                    <label class="types-label">Types de course compatibles *</label>
+                    <div class="types-checkboxes" id="shoe-types-checkboxes">
+                        <!-- Généré dynamiquement -->
+                    </div>
+                </div>
+                
+                <div class="modal-actions">
+                    <button type="button" class="btn-premium btn-secondary modal-close">Annuler</button>
+                    <button type="submit" class="btn-premium btn-primary">
+                        <span class="btn-icon">💾</span>
+                        <span>Sauvegarder</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Advanced Filters Modal -->
+    <div id="filters-modal" class="modal-premium hidden">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content-premium">
+            <div class="modal-header-premium">
+                <h3>Filtres avancés</h3>
+                <button class="modal-close">✕</button>
+            </div>
+            
+            <div class="modal-body-premium">
+                <div class="filters-grid">
+                    <div class="filter-group">
+                        <label>Prix</label>
+                        <div class="range-slider">
+                            <input type="range" id="min-price" min="50" max="300" value="50">
+                            <input type="range" id="max-price" min="50" max="300" value="300">
+                        </div>
+                        <div class="range-values">
+                            <span id="min-price-value">50€</span>
+                            <span>-</span>
+                            <span id="max-price-value">300€</span>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label>Marques</label>
+                        <div class="brands-checkboxes" id="brands-filter">
+                            <!-- Généré dynamiquement -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="modal-actions">
+                <button class="btn-premium btn-secondary" id="reset-filters">Réinitialiser</button>
+                <button class="btn-premium btn-primary" id="apply-filters">Appliquer filtres</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notifications Toast -->
+    <div id="toast-container" class="toast-container">
+        <!-- Généré dynamiquement -->
+    </div>
+
+    <!-- Loading Overlay Premium -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="loading-spinner-premium">
+                <div class="spinner-circle"></div>
+                <div class="spinner-circle"></div>
+                <div class="spinner-circle"></div>
+            </div>
+            <h3 class="loading-title">Analyse en cours...</h3>
+            <p class="loading-subtitle" id="loading-text">Recherche des meilleures recommandations pour vous</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
