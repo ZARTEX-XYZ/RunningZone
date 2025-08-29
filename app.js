@@ -527,57 +527,19 @@ const appData = {
   "social_media": [
     {
       "platform": "GitHub",
-      "handle": "RunningZone/recommendations",
-      "url": "https://github.com/runningzone",
+      "handle": "SOON...",
+      "url": "SOON...",
       "icon": "💻",
       "description": "Code source et contributions open-source"
     },
     {
       "platform": "Instagram", 
-      "handle": "@runningzone_official",
-      "url": "https://instagram.com/runningzone_official",
+      "handle": "SOON...",
+      "url": "SOON...",
       "icon": "📸",
       "description": "Photos quotidiennes et conseils visuels"
-    },
-    {
-      "platform": "Twitter/X",
-      "handle": "@RunningZoneFR", 
-      "url": "https://twitter.com/RunningZoneFR",
-      "icon": "🐦",
-      "description": "Actualités running et tips express"
-    },
-    {
-      "platform": "YouTube",
-      "handle": "RunningZone Tutorials",
-      "url": "https://youtube.com/@RunningZoneTutorials", 
-      "icon": "📺",
-      "description": "Tests détaillés et tutoriels vidéo"
-    },
-    {
-      "platform": "TikTok",
-      "handle": "@runningzonetips",
-      "url": "https://tiktok.com/@runningzonetips",
-      "icon": "🎵", 
-      "description": "Conseils courts et tendances"
-    },
-    {
-      "platform": "LinkedIn",
-      "handle": "RunningZone Company",
-      "url": "https://linkedin.com/company/runningzone",
-      "icon": "💼",
-      "description": "Actualités entreprise et partenariats"
     }
   ],
-  "contact_info": {
-    "email": "contact@runningzone.fr",
-    "phone": "+33 1 42 86 95 27",
-    "address": "123 Avenue des Champs-Élysées, 75008 Paris",
-    "hours": {
-      "weekdays": "9h00 - 18h00",
-      "weekend": "10h00 - 16h00"
-    },
-    "response_time": "24h en moyenne"
-  },
   "brands": [
     {"name": "Nike", "logo": "🏃‍♂️", "color": "#000"},
     {"name": "Adidas", "logo": "👟", "color": "#000"},
@@ -638,7 +600,6 @@ function initializeApp() {
   setupRecommendations();
   setupComparator();
   setupFavorites();
-  setupContactForm();
   setupAdminPanel();
   setupModals();
   
